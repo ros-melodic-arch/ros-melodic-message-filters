@@ -34,9 +34,9 @@ depends=(
 	${ros_depends[@]}
 )
 
-_dir="ros_comm-release-release-melodic-message_filters"
+_dir="ros_comm-release-release-melodic-message_filters-${pkgver}-${_pkgver_patch}"
 source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/ros_comm-release/archive/release/melodic/message_filters/${pkgver}-${_pkgver_patch}.tar.gz")
-sha256sums=('3eb38ff43701662023ac5e7141fb50303fb27657822275b4d4da92ed661ff72d')
+sha256sums=('3a6ce5214cb6b17a3af6268ddac55c5ac812ef09eb97685e6930da32799a8a3e')
 
 build() {
 	# Use ROS environment variables.
